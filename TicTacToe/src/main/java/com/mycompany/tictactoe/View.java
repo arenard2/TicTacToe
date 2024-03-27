@@ -14,6 +14,7 @@ public class View extends javax.swing.JFrame {
     /**
      * Creates new form view
      */
+    
     public View() {
         initComponents();
     }
@@ -115,9 +116,8 @@ public class View extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -170,14 +170,16 @@ public class View extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     boolean whoseTurn = false;
+    boolean gameOver = false;
     private void onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -186,12 +188,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton2onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -199,12 +202,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton3onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -212,12 +216,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton4onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -225,12 +230,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton5onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -238,12 +244,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton6onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -251,12 +258,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton7onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -264,12 +272,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton8onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8onClick
     JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -277,12 +286,13 @@ public class View extends javax.swing.JFrame {
 
     private void jButton9onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9onClick
    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("")) {
+    if (button.getText().equals("") && !this.gameOver) {
       String player = (this.whoseTurn) ? "X" : "O";
       button.setText(player);
       String winner = this.isWinner();
       if (!winner.equals("")) {
           jLabel1.setText(winner+" Wins the game!");
+          this.gameOver = true;
       }
       this.whoseTurn = !this.whoseTurn;
     }
@@ -319,8 +329,22 @@ private String isWinner() {
     return status[0][0];
   if (!status[0][2].isEmpty() && status[0][2].equals(status[1][1]) && status[0][2].equals(status[2][0]))
     return status[0][2];
-
-  // If we haven't found it, then return a blank string
+  
+  boolean tie = true;
+  for(int y = 0; y < 3; y++){
+      for(int x = 0; x < 3; x++){
+          if(status[y][x].isEmpty()){
+              tie = false;
+          }
+      }
+  }
+  
+  if(tie){
+      jLabel1.setText("Tie!");
+      this.gameOver = true;
+  }
+  
+// If we haven't found it, then return a blank string
   return "";
 }
 
