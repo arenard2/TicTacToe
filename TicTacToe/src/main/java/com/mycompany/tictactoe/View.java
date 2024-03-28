@@ -17,6 +17,7 @@ public class View extends javax.swing.JFrame {
     
     public View() {
         initComponents();
+        jLabel1.setText("");
     }
 
     /**
@@ -54,56 +55,56 @@ public class View extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton3.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton4.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton5.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton6.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton7.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton8.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8onClick(evt);
+                onClick(evt);
             }
         });
 
         jButton9.setFont(new java.awt.Font("Liberation Sans", 0, 36)); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9onClick(evt);
+                onClick(evt);
             }
         });
 
@@ -185,118 +186,6 @@ public class View extends javax.swing.JFrame {
     }
     
     }//GEN-LAST:event_onClick
-
-    private void jButton2onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton2onClick
-
-    private void jButton3onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton3onClick
-
-    private void jButton4onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton4onClick
-
-    private void jButton5onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton5onClick
-
-    private void jButton6onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton6onClick
-
-    private void jButton7onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton7onClick
-
-    private void jButton8onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8onClick
-    JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton8onClick
-
-    private void jButton9onClick(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9onClick
-   JButton button = (JButton)evt.getSource();
-    if (button.getText().equals("") && !this.gameOver) {
-      String player = (this.whoseTurn) ? "X" : "O";
-      button.setText(player);
-      String winner = this.isWinner();
-      if (!winner.equals("")) {
-          jLabel1.setText(winner+" Wins the game!");
-          this.gameOver = true;
-      }
-      this.whoseTurn = !this.whoseTurn;
-    }
-    }//GEN-LAST:event_jButton9onClick
 
 private String isWinner() {
   // Get the text contents of each button.  
